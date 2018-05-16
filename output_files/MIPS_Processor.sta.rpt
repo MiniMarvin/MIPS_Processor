@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MIPS_Processor
-Tue May 15 20:16:33 2018
+Wed May 16 17:02:31 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -16,13 +16,12 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   8. Recovery Summary
   9. Removal Summary
  10. Minimum Pulse Width Summary
- 11. Propagation Delay
- 12. Minimum Propagation Delay
- 13. Clock Transfers
- 14. Report TCCS
- 15. Report RSKM
- 16. Unconstrained Paths
- 17. TimeQuest Timing Analyzer Messages
+ 11. Datasheet Report
+ 12. Clock Transfers
+ 13. Report TCCS
+ 14. Report RSKM
+ 15. Unconstrained Paths
+ 16. TimeQuest Timing Analyzer Messages
 
 
 
@@ -51,7 +50,7 @@ applicable agreement for further details.
 ; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name      ; MIPS_Processor                                     ;
 ; Device Family      ; MAX V                                              ;
-; Device Name        ; 5M570ZF256C4                                       ;
+; Device Name        ; 5M1270ZF324C4                                      ;
 ; Timing Models      ; Final                                              ;
 ; Delay Model        ; Slow Model                                         ;
 ; Rise/Fall Delays   ; Unavailable                                        ;
@@ -117,318 +116,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------+
-; Propagation Delay                                      ;
-+--------------+-------------+--------+----+----+--------+
-; Input Port   ; Output Port ; RR     ; RF ; FR ; FF     ;
-+--------------+-------------+--------+----+----+--------+
-; A[1]         ; word[1]     ; 10.241 ;    ;    ; 10.241 ;
-; A[2]         ; word[2]     ; 10.062 ;    ;    ; 10.062 ;
-; A[3]         ; word[3]     ; 11.483 ;    ;    ; 11.483 ;
-; A[4]         ; word[4]     ; 8.423  ;    ;    ; 8.423  ;
-; A[5]         ; word[5]     ; 12.015 ;    ;    ; 12.015 ;
-; A[6]         ; word[6]     ; 10.274 ;    ;    ; 10.274 ;
-; A[7]         ; word[7]     ; 10.418 ;    ;    ; 10.418 ;
-; A[8]         ; word[8]     ; 11.879 ;    ;    ; 11.879 ;
-; A[9]         ; word[9]     ; 14.358 ;    ;    ; 14.358 ;
-; A[10]        ; word[10]    ; 12.951 ;    ;    ; 12.951 ;
-; A[11]        ; word[11]    ; 9.798  ;    ;    ; 9.798  ;
-; A[12]        ; word[12]    ; 11.547 ;    ;    ; 11.547 ;
-; A[13]        ; word[13]    ; 13.988 ;    ;    ; 13.988 ;
-; A[14]        ; word[14]    ; 12.847 ;    ;    ; 12.847 ;
-; A[15]        ; word[15]    ; 10.817 ;    ;    ; 10.817 ;
-; A[16]        ; word[16]    ; 10.280 ;    ;    ; 10.280 ;
-; A[17]        ; word[17]    ; 9.982  ;    ;    ; 9.982  ;
-; A[18]        ; word[18]    ; 11.532 ;    ;    ; 11.532 ;
-; A[19]        ; word[19]    ; 9.228  ;    ;    ; 9.228  ;
-; A[20]        ; word[20]    ; 9.729  ;    ;    ; 9.729  ;
-; A[21]        ; word[21]    ; 8.129  ;    ;    ; 8.129  ;
-; A[22]        ; word[22]    ; 10.819 ;    ;    ; 10.819 ;
-; A[23]        ; word[23]    ; 10.706 ;    ;    ; 10.706 ;
-; A[24]        ; word[24]    ; 9.773  ;    ;    ; 9.773  ;
-; A[25]        ; word[25]    ; 10.481 ;    ;    ; 10.481 ;
-; A[26]        ; word[26]    ; 10.081 ;    ;    ; 10.081 ;
-; A[27]        ; word[27]    ; 10.151 ;    ;    ; 10.151 ;
-; A[28]        ; word[28]    ; 10.226 ;    ;    ; 10.226 ;
-; A[29]        ; word[29]    ; 11.242 ;    ;    ; 11.242 ;
-; A[30]        ; word[30]    ; 11.284 ;    ;    ; 11.284 ;
-; A[31]        ; word[31]    ; 8.210  ;    ;    ; 8.210  ;
-; B[0]         ; word[0]     ; 8.718  ;    ;    ; 8.718  ;
-; B[1]         ; word[1]     ; 8.982  ;    ;    ; 8.982  ;
-; B[2]         ; word[2]     ; 11.069 ;    ;    ; 11.069 ;
-; B[3]         ; word[3]     ; 11.934 ;    ;    ; 11.934 ;
-; B[4]         ; word[4]     ; 7.907  ;    ;    ; 7.907  ;
-; B[5]         ; word[5]     ; 11.215 ;    ;    ; 11.215 ;
-; B[6]         ; word[6]     ; 10.695 ;    ;    ; 10.695 ;
-; B[7]         ; word[7]     ; 12.421 ;    ;    ; 12.421 ;
-; B[8]         ; word[8]     ; 14.470 ;    ;    ; 14.470 ;
-; B[9]         ; word[9]     ; 13.057 ;    ;    ; 13.057 ;
-; B[10]        ; word[10]    ; 13.511 ;    ;    ; 13.511 ;
-; B[11]        ; word[11]    ; 11.731 ;    ;    ; 11.731 ;
-; B[12]        ; word[12]    ; 10.708 ;    ;    ; 10.708 ;
-; B[13]        ; word[13]    ; 13.828 ;    ;    ; 13.828 ;
-; B[14]        ; word[14]    ; 12.709 ;    ;    ; 12.709 ;
-; B[15]        ; word[15]    ; 11.627 ;    ;    ; 11.627 ;
-; B[16]        ; word[16]    ; 9.635  ;    ;    ; 9.635  ;
-; B[17]        ; word[17]    ; 10.202 ;    ;    ; 10.202 ;
-; B[18]        ; word[18]    ; 10.248 ;    ;    ; 10.248 ;
-; B[19]        ; word[19]    ; 8.548  ;    ;    ; 8.548  ;
-; B[20]        ; word[20]    ; 9.595  ;    ;    ; 9.595  ;
-; B[21]        ; word[21]    ; 7.464  ;    ;    ; 7.464  ;
-; B[22]        ; word[22]    ; 10.767 ;    ;    ; 10.767 ;
-; B[23]        ; word[23]    ; 10.188 ;    ;    ; 10.188 ;
-; B[24]        ; word[24]    ; 10.868 ;    ;    ; 10.868 ;
-; B[25]        ; word[25]    ; 8.903  ;    ;    ; 8.903  ;
-; B[26]        ; word[26]    ; 11.103 ;    ;    ; 11.103 ;
-; B[27]        ; word[27]    ; 10.487 ;    ;    ; 10.487 ;
-; B[28]        ; word[28]    ; 10.753 ;    ;    ; 10.753 ;
-; B[29]        ; word[29]    ; 11.748 ;    ;    ; 11.748 ;
-; B[30]        ; word[30]    ; 10.763 ;    ;    ; 10.763 ;
-; B[31]        ; word[31]    ; 8.697  ;    ;    ; 8.697  ;
-; partition[0] ; word[1]     ; 14.421 ;    ;    ; 14.421 ;
-; partition[0] ; word[2]     ; 14.628 ;    ;    ; 14.628 ;
-; partition[0] ; word[3]     ; 16.061 ;    ;    ; 16.061 ;
-; partition[0] ; word[4]     ; 13.113 ;    ;    ; 13.113 ;
-; partition[0] ; word[5]     ; 13.638 ;    ;    ; 13.638 ;
-; partition[0] ; word[6]     ; 14.919 ;    ;    ; 14.919 ;
-; partition[0] ; word[7]     ; 14.500 ;    ;    ; 14.500 ;
-; partition[0] ; word[16]    ; 16.593 ;    ;    ; 16.593 ;
-; partition[0] ; word[17]    ; 16.703 ;    ;    ; 16.703 ;
-; partition[0] ; word[18]    ; 16.871 ;    ;    ; 16.871 ;
-; partition[0] ; word[19]    ; 14.039 ;    ;    ; 14.039 ;
-; partition[0] ; word[20]    ; 16.019 ;    ;    ; 16.019 ;
-; partition[0] ; word[21]    ; 15.148 ;    ;    ; 15.148 ;
-; partition[0] ; word[22]    ; 17.458 ;    ;    ; 17.458 ;
-; partition[0] ; word[23]    ; 15.863 ;    ;    ; 15.863 ;
-; partition[0] ; word[24]    ; 16.810 ;    ;    ; 16.810 ;
-; partition[0] ; word[25]    ; 16.617 ;    ;    ; 16.617 ;
-; partition[0] ; word[26]    ; 16.220 ;    ;    ; 16.220 ;
-; partition[0] ; word[27]    ; 17.525 ;    ;    ; 17.525 ;
-; partition[0] ; word[28]    ; 15.728 ;    ;    ; 15.728 ;
-; partition[0] ; word[29]    ; 16.802 ;    ;    ; 16.802 ;
-; partition[0] ; word[30]    ; 16.864 ;    ;    ; 16.864 ;
-; partition[0] ; word[31]    ; 15.141 ;    ;    ; 15.141 ;
-; partition[1] ; word[1]     ; 14.957 ;    ;    ; 14.957 ;
-; partition[1] ; word[2]     ; 15.164 ;    ;    ; 15.164 ;
-; partition[1] ; word[3]     ; 16.597 ;    ;    ; 16.597 ;
-; partition[1] ; word[4]     ; 13.649 ;    ;    ; 13.649 ;
-; partition[1] ; word[5]     ; 14.174 ;    ;    ; 14.174 ;
-; partition[1] ; word[6]     ; 15.455 ;    ;    ; 15.455 ;
-; partition[1] ; word[7]     ; 15.036 ;    ;    ; 15.036 ;
-; partition[1] ; word[8]     ; 13.420 ;    ;    ; 13.420 ;
-; partition[1] ; word[9]     ; 13.914 ;    ;    ; 13.914 ;
-; partition[1] ; word[10]    ; 12.214 ;    ;    ; 12.214 ;
-; partition[1] ; word[11]    ; 11.511 ;    ;    ; 11.511 ;
-; partition[1] ; word[12]    ; 12.037 ;    ;    ; 12.037 ;
-; partition[1] ; word[13]    ; 13.138 ;    ;    ; 13.138 ;
-; partition[1] ; word[14]    ; 13.295 ;    ;    ; 13.295 ;
-; partition[1] ; word[15]    ; 12.035 ;    ;    ; 12.035 ;
-; partition[1] ; word[16]    ; 17.120 ;    ;    ; 17.120 ;
-; partition[1] ; word[17]    ; 17.230 ;    ;    ; 17.230 ;
-; partition[1] ; word[18]    ; 17.398 ;    ;    ; 17.398 ;
-; partition[1] ; word[19]    ; 14.566 ;    ;    ; 14.566 ;
-; partition[1] ; word[20]    ; 16.546 ;    ;    ; 16.546 ;
-; partition[1] ; word[21]    ; 15.675 ;    ;    ; 15.675 ;
-; partition[1] ; word[22]    ; 17.985 ;    ;    ; 17.985 ;
-; partition[1] ; word[23]    ; 16.390 ;    ;    ; 16.390 ;
-; partition[1] ; word[24]    ; 17.337 ;    ;    ; 17.337 ;
-; partition[1] ; word[25]    ; 17.144 ;    ;    ; 17.144 ;
-; partition[1] ; word[26]    ; 16.747 ;    ;    ; 16.747 ;
-; partition[1] ; word[27]    ; 18.052 ;    ;    ; 18.052 ;
-; partition[1] ; word[28]    ; 16.255 ;    ;    ; 16.255 ;
-; partition[1] ; word[29]    ; 17.329 ;    ;    ; 17.329 ;
-; partition[1] ; word[30]    ; 17.391 ;    ;    ; 17.391 ;
-; partition[1] ; word[31]    ; 15.668 ;    ;    ; 15.668 ;
-; partition[2] ; word[0]     ; 9.498  ;    ;    ; 9.498  ;
-; partition[2] ; word[1]     ; 9.500  ;    ;    ; 9.500  ;
-; partition[2] ; word[2]     ; 9.707  ;    ;    ; 9.707  ;
-; partition[2] ; word[3]     ; 11.140 ;    ;    ; 11.140 ;
-; partition[2] ; word[4]     ; 7.852  ;    ;    ; 7.852  ;
-; partition[2] ; word[5]     ; 8.717  ;    ;    ; 8.717  ;
-; partition[2] ; word[6]     ; 9.666  ;    ;    ; 9.666  ;
-; partition[2] ; word[7]     ; 9.585  ;    ;    ; 9.585  ;
-; partition[2] ; word[8]     ; 13.983 ;    ;    ; 13.983 ;
-; partition[2] ; word[9]     ; 13.048 ;    ;    ; 13.048 ;
-; partition[2] ; word[10]    ; 11.854 ;    ;    ; 11.854 ;
-; partition[2] ; word[11]    ; 11.052 ;    ;    ; 11.052 ;
-; partition[2] ; word[12]    ; 11.170 ;    ;    ; 11.170 ;
-; partition[2] ; word[13]    ; 12.794 ;    ;    ; 12.794 ;
-; partition[2] ; word[14]    ; 12.947 ;    ;    ; 12.947 ;
-; partition[2] ; word[15]    ; 11.151 ;    ;    ; 11.151 ;
-; partition[2] ; word[16]    ; 11.792 ;    ;    ; 11.792 ;
-; partition[2] ; word[17]    ; 11.376 ;    ;    ; 11.376 ;
-; partition[2] ; word[18]    ; 11.724 ;    ;    ; 11.724 ;
-; partition[2] ; word[19]    ; 9.434  ;    ;    ; 9.434  ;
-; partition[2] ; word[20]    ; 10.891 ;    ;    ; 10.891 ;
-; partition[2] ; word[21]    ; 10.360 ;    ;    ; 10.360 ;
-; partition[2] ; word[22]    ; 12.139 ;    ;    ; 12.139 ;
-; partition[2] ; word[23]    ; 11.818 ;    ;    ; 11.818 ;
-; partition[2] ; word[24]    ; 12.005 ;    ;    ; 12.005 ;
-; partition[2] ; word[25]    ; 11.290 ;    ;    ; 11.290 ;
-; partition[2] ; word[26]    ; 11.074 ;    ;    ; 11.074 ;
-; partition[2] ; word[27]    ; 12.737 ;    ;    ; 12.737 ;
-; partition[2] ; word[28]    ; 11.105 ;    ;    ; 11.105 ;
-; partition[2] ; word[29]    ; 11.658 ;    ;    ; 11.658 ;
-; partition[2] ; word[30]    ; 11.736 ;    ;    ; 11.736 ;
-; partition[2] ; word[31]    ; 10.354 ;    ;    ; 10.354 ;
-+--------------+-------------+--------+----+----+--------+
-
-
-+--------------------------------------------------------+
-; Minimum Propagation Delay                              ;
-+--------------+-------------+--------+----+----+--------+
-; Input Port   ; Output Port ; RR     ; RF ; FR ; FF     ;
-+--------------+-------------+--------+----+----+--------+
-; A[1]         ; word[1]     ; 10.241 ;    ;    ; 10.241 ;
-; A[2]         ; word[2]     ; 10.062 ;    ;    ; 10.062 ;
-; A[3]         ; word[3]     ; 11.483 ;    ;    ; 11.483 ;
-; A[4]         ; word[4]     ; 8.423  ;    ;    ; 8.423  ;
-; A[5]         ; word[5]     ; 12.015 ;    ;    ; 12.015 ;
-; A[6]         ; word[6]     ; 10.274 ;    ;    ; 10.274 ;
-; A[7]         ; word[7]     ; 10.418 ;    ;    ; 10.418 ;
-; A[8]         ; word[8]     ; 11.879 ;    ;    ; 11.879 ;
-; A[9]         ; word[9]     ; 14.358 ;    ;    ; 14.358 ;
-; A[10]        ; word[10]    ; 12.951 ;    ;    ; 12.951 ;
-; A[11]        ; word[11]    ; 9.798  ;    ;    ; 9.798  ;
-; A[12]        ; word[12]    ; 11.547 ;    ;    ; 11.547 ;
-; A[13]        ; word[13]    ; 13.988 ;    ;    ; 13.988 ;
-; A[14]        ; word[14]    ; 12.847 ;    ;    ; 12.847 ;
-; A[15]        ; word[15]    ; 10.817 ;    ;    ; 10.817 ;
-; A[16]        ; word[16]    ; 10.280 ;    ;    ; 10.280 ;
-; A[17]        ; word[17]    ; 9.982  ;    ;    ; 9.982  ;
-; A[18]        ; word[18]    ; 11.532 ;    ;    ; 11.532 ;
-; A[19]        ; word[19]    ; 9.228  ;    ;    ; 9.228  ;
-; A[20]        ; word[20]    ; 9.729  ;    ;    ; 9.729  ;
-; A[21]        ; word[21]    ; 8.129  ;    ;    ; 8.129  ;
-; A[22]        ; word[22]    ; 10.819 ;    ;    ; 10.819 ;
-; A[23]        ; word[23]    ; 10.706 ;    ;    ; 10.706 ;
-; A[24]        ; word[24]    ; 9.773  ;    ;    ; 9.773  ;
-; A[25]        ; word[25]    ; 10.481 ;    ;    ; 10.481 ;
-; A[26]        ; word[26]    ; 10.081 ;    ;    ; 10.081 ;
-; A[27]        ; word[27]    ; 10.151 ;    ;    ; 10.151 ;
-; A[28]        ; word[28]    ; 10.226 ;    ;    ; 10.226 ;
-; A[29]        ; word[29]    ; 11.242 ;    ;    ; 11.242 ;
-; A[30]        ; word[30]    ; 11.284 ;    ;    ; 11.284 ;
-; A[31]        ; word[31]    ; 8.210  ;    ;    ; 8.210  ;
-; B[0]         ; word[0]     ; 8.718  ;    ;    ; 8.718  ;
-; B[1]         ; word[1]     ; 8.982  ;    ;    ; 8.982  ;
-; B[2]         ; word[2]     ; 11.069 ;    ;    ; 11.069 ;
-; B[3]         ; word[3]     ; 11.934 ;    ;    ; 11.934 ;
-; B[4]         ; word[4]     ; 7.907  ;    ;    ; 7.907  ;
-; B[5]         ; word[5]     ; 11.215 ;    ;    ; 11.215 ;
-; B[6]         ; word[6]     ; 10.695 ;    ;    ; 10.695 ;
-; B[7]         ; word[7]     ; 12.421 ;    ;    ; 12.421 ;
-; B[8]         ; word[8]     ; 14.470 ;    ;    ; 14.470 ;
-; B[9]         ; word[9]     ; 13.057 ;    ;    ; 13.057 ;
-; B[10]        ; word[10]    ; 13.511 ;    ;    ; 13.511 ;
-; B[11]        ; word[11]    ; 11.731 ;    ;    ; 11.731 ;
-; B[12]        ; word[12]    ; 10.708 ;    ;    ; 10.708 ;
-; B[13]        ; word[13]    ; 13.828 ;    ;    ; 13.828 ;
-; B[14]        ; word[14]    ; 12.709 ;    ;    ; 12.709 ;
-; B[15]        ; word[15]    ; 11.627 ;    ;    ; 11.627 ;
-; B[16]        ; word[16]    ; 9.635  ;    ;    ; 9.635  ;
-; B[17]        ; word[17]    ; 10.202 ;    ;    ; 10.202 ;
-; B[18]        ; word[18]    ; 10.248 ;    ;    ; 10.248 ;
-; B[19]        ; word[19]    ; 8.548  ;    ;    ; 8.548  ;
-; B[20]        ; word[20]    ; 9.595  ;    ;    ; 9.595  ;
-; B[21]        ; word[21]    ; 7.464  ;    ;    ; 7.464  ;
-; B[22]        ; word[22]    ; 10.767 ;    ;    ; 10.767 ;
-; B[23]        ; word[23]    ; 10.188 ;    ;    ; 10.188 ;
-; B[24]        ; word[24]    ; 10.868 ;    ;    ; 10.868 ;
-; B[25]        ; word[25]    ; 8.903  ;    ;    ; 8.903  ;
-; B[26]        ; word[26]    ; 11.103 ;    ;    ; 11.103 ;
-; B[27]        ; word[27]    ; 10.487 ;    ;    ; 10.487 ;
-; B[28]        ; word[28]    ; 10.753 ;    ;    ; 10.753 ;
-; B[29]        ; word[29]    ; 11.748 ;    ;    ; 11.748 ;
-; B[30]        ; word[30]    ; 10.763 ;    ;    ; 10.763 ;
-; B[31]        ; word[31]    ; 8.697  ;    ;    ; 8.697  ;
-; partition[0] ; word[1]     ; 14.421 ;    ;    ; 14.421 ;
-; partition[0] ; word[2]     ; 14.628 ;    ;    ; 14.628 ;
-; partition[0] ; word[3]     ; 16.061 ;    ;    ; 16.061 ;
-; partition[0] ; word[4]     ; 13.113 ;    ;    ; 13.113 ;
-; partition[0] ; word[5]     ; 13.638 ;    ;    ; 13.638 ;
-; partition[0] ; word[6]     ; 14.919 ;    ;    ; 14.919 ;
-; partition[0] ; word[7]     ; 14.500 ;    ;    ; 14.500 ;
-; partition[0] ; word[16]    ; 16.593 ;    ;    ; 16.593 ;
-; partition[0] ; word[17]    ; 16.703 ;    ;    ; 16.703 ;
-; partition[0] ; word[18]    ; 16.871 ;    ;    ; 16.871 ;
-; partition[0] ; word[19]    ; 14.039 ;    ;    ; 14.039 ;
-; partition[0] ; word[20]    ; 16.019 ;    ;    ; 16.019 ;
-; partition[0] ; word[21]    ; 15.148 ;    ;    ; 15.148 ;
-; partition[0] ; word[22]    ; 17.458 ;    ;    ; 17.458 ;
-; partition[0] ; word[23]    ; 15.863 ;    ;    ; 15.863 ;
-; partition[0] ; word[24]    ; 16.810 ;    ;    ; 16.810 ;
-; partition[0] ; word[25]    ; 16.617 ;    ;    ; 16.617 ;
-; partition[0] ; word[26]    ; 16.220 ;    ;    ; 16.220 ;
-; partition[0] ; word[27]    ; 17.525 ;    ;    ; 17.525 ;
-; partition[0] ; word[28]    ; 15.728 ;    ;    ; 15.728 ;
-; partition[0] ; word[29]    ; 16.802 ;    ;    ; 16.802 ;
-; partition[0] ; word[30]    ; 16.864 ;    ;    ; 16.864 ;
-; partition[0] ; word[31]    ; 15.141 ;    ;    ; 15.141 ;
-; partition[1] ; word[1]     ; 14.957 ;    ;    ; 14.957 ;
-; partition[1] ; word[2]     ; 15.164 ;    ;    ; 15.164 ;
-; partition[1] ; word[3]     ; 16.597 ;    ;    ; 16.597 ;
-; partition[1] ; word[4]     ; 13.649 ;    ;    ; 13.649 ;
-; partition[1] ; word[5]     ; 14.174 ;    ;    ; 14.174 ;
-; partition[1] ; word[6]     ; 15.455 ;    ;    ; 15.455 ;
-; partition[1] ; word[7]     ; 15.036 ;    ;    ; 15.036 ;
-; partition[1] ; word[8]     ; 13.420 ;    ;    ; 13.420 ;
-; partition[1] ; word[9]     ; 13.914 ;    ;    ; 13.914 ;
-; partition[1] ; word[10]    ; 12.214 ;    ;    ; 12.214 ;
-; partition[1] ; word[11]    ; 11.511 ;    ;    ; 11.511 ;
-; partition[1] ; word[12]    ; 12.037 ;    ;    ; 12.037 ;
-; partition[1] ; word[13]    ; 13.138 ;    ;    ; 13.138 ;
-; partition[1] ; word[14]    ; 13.295 ;    ;    ; 13.295 ;
-; partition[1] ; word[15]    ; 12.035 ;    ;    ; 12.035 ;
-; partition[1] ; word[16]    ; 17.120 ;    ;    ; 17.120 ;
-; partition[1] ; word[17]    ; 17.230 ;    ;    ; 17.230 ;
-; partition[1] ; word[18]    ; 17.398 ;    ;    ; 17.398 ;
-; partition[1] ; word[19]    ; 14.566 ;    ;    ; 14.566 ;
-; partition[1] ; word[20]    ; 16.546 ;    ;    ; 16.546 ;
-; partition[1] ; word[21]    ; 15.675 ;    ;    ; 15.675 ;
-; partition[1] ; word[22]    ; 17.985 ;    ;    ; 17.985 ;
-; partition[1] ; word[23]    ; 16.390 ;    ;    ; 16.390 ;
-; partition[1] ; word[24]    ; 17.337 ;    ;    ; 17.337 ;
-; partition[1] ; word[25]    ; 17.144 ;    ;    ; 17.144 ;
-; partition[1] ; word[26]    ; 16.747 ;    ;    ; 16.747 ;
-; partition[1] ; word[27]    ; 18.052 ;    ;    ; 18.052 ;
-; partition[1] ; word[28]    ; 16.255 ;    ;    ; 16.255 ;
-; partition[1] ; word[29]    ; 17.329 ;    ;    ; 17.329 ;
-; partition[1] ; word[30]    ; 17.391 ;    ;    ; 17.391 ;
-; partition[1] ; word[31]    ; 15.668 ;    ;    ; 15.668 ;
-; partition[2] ; word[0]     ; 9.498  ;    ;    ; 9.498  ;
-; partition[2] ; word[1]     ; 9.500  ;    ;    ; 9.500  ;
-; partition[2] ; word[2]     ; 9.707  ;    ;    ; 9.707  ;
-; partition[2] ; word[3]     ; 11.140 ;    ;    ; 11.140 ;
-; partition[2] ; word[4]     ; 7.852  ;    ;    ; 7.852  ;
-; partition[2] ; word[5]     ; 8.717  ;    ;    ; 8.717  ;
-; partition[2] ; word[6]     ; 9.666  ;    ;    ; 9.666  ;
-; partition[2] ; word[7]     ; 9.585  ;    ;    ; 9.585  ;
-; partition[2] ; word[8]     ; 13.983 ;    ;    ; 13.983 ;
-; partition[2] ; word[9]     ; 13.048 ;    ;    ; 13.048 ;
-; partition[2] ; word[10]    ; 11.854 ;    ;    ; 11.854 ;
-; partition[2] ; word[11]    ; 11.052 ;    ;    ; 11.052 ;
-; partition[2] ; word[12]    ; 11.170 ;    ;    ; 11.170 ;
-; partition[2] ; word[13]    ; 12.794 ;    ;    ; 12.794 ;
-; partition[2] ; word[14]    ; 12.947 ;    ;    ; 12.947 ;
-; partition[2] ; word[15]    ; 11.151 ;    ;    ; 11.151 ;
-; partition[2] ; word[16]    ; 11.792 ;    ;    ; 11.792 ;
-; partition[2] ; word[17]    ; 11.376 ;    ;    ; 11.376 ;
-; partition[2] ; word[18]    ; 11.724 ;    ;    ; 11.724 ;
-; partition[2] ; word[19]    ; 9.434  ;    ;    ; 9.434  ;
-; partition[2] ; word[20]    ; 10.891 ;    ;    ; 10.891 ;
-; partition[2] ; word[21]    ; 10.360 ;    ;    ; 10.360 ;
-; partition[2] ; word[22]    ; 12.139 ;    ;    ; 12.139 ;
-; partition[2] ; word[23]    ; 11.818 ;    ;    ; 11.818 ;
-; partition[2] ; word[24]    ; 12.005 ;    ;    ; 12.005 ;
-; partition[2] ; word[25]    ; 11.290 ;    ;    ; 11.290 ;
-; partition[2] ; word[26]    ; 11.074 ;    ;    ; 11.074 ;
-; partition[2] ; word[27]    ; 12.737 ;    ;    ; 12.737 ;
-; partition[2] ; word[28]    ; 11.105 ;    ;    ; 11.105 ;
-; partition[2] ; word[29]    ; 11.658 ;    ;    ; 11.658 ;
-; partition[2] ; word[30]    ; 11.736 ;    ;    ; 11.736 ;
-; partition[2] ; word[31]    ; 10.354 ;    ;    ; 10.354 ;
-+--------------+-------------+--------+----+----+--------+
+--------------------
+; Datasheet Report ;
+--------------------
+Nothing to report.
 
 
 -------------------
@@ -456,10 +147,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 66    ; 66   ;
-; Unconstrained Input Port Paths  ; 149   ; 149  ;
-; Unconstrained Output Ports      ; 32    ; 32   ;
-; Unconstrained Output Port Paths ; 149   ; 149  ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -469,7 +160,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue May 15 20:16:31 2018
+    Info: Processing started: Wed May 16 17:02:30 2018
 Info: Command: quartus_sta MIPS_Processor -c MIPS_Processor
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -490,12 +181,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 577 megabytes
-    Info: Processing ended: Tue May 15 20:16:33 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 578 megabytes
+    Info: Processing ended: Wed May 16 17:02:31 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

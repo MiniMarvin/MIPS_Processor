@@ -8,7 +8,7 @@
 # associated documentation or information are expressly subject 
 # to the terms and conditions of the Intel Program License 
 # Subscription Agreement, the Intel Quartus Prime License Agreement,
-# the Intel FPGA IP License Agreement, or other applicable license
+# the Intel FPGA IP License Agreement, or other applicable liecnse
 # agreement, including, without limitation, that your use is for
 # the sole purpose of programming logic devices manufactured by
 # Intel and sold by Intel or its authorized distributors.  Please
@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE Auto
-set_global_assignment -name TOP_LEVEL_ENTITY myMux
+set_global_assignment -name TOP_LEVEL_ENTITY UnidadeControle
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:03:39  MAY 14, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -64,3 +64,5 @@ set_global_assignment -name VHDL_FILE "Componentes do Projeto/Banco_reg.vhd"
 set_global_assignment -name VERILOG_FILE AluOut.v
 set_global_assignment -name VERILOG_FILE myMux.v
 set_global_assignment -name VERILOG_FILE DivMult.v
+set_global_assignment -name VERILOG_FILE UnidadeControle.v
+set_global_assignment -name VERILOG_FILE cpu.v

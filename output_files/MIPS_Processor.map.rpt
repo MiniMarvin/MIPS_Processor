@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_Processor
-Wed May 16 12:34:37 2018
+Wed May 16 17:00:32 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -14,8 +14,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Analysis & Synthesis Messages
+  9. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +40,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed May 16 12:34:37 2018      ;
+; Analysis & Synthesis Status ; Successful - Wed May 16 17:00:32 2018      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; MIPS_Processor                             ;
-; Top-level Entity Name       ; myMux                                      ;
+; Top-level Entity Name       ; UnidadeControle                            ;
 ; Family                      ; MAX V                                      ;
-; Total logic elements        ; 160                                        ;
-; Total pins                  ; 291                                        ;
+; Total logic elements        ; 0                                          ;
+; Total pins                  ; 232                                        ;
 ; Total virtual pins          ; 0                                          ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
 +-----------------------------+--------------------------------------------+
@@ -58,7 +57,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; myMux              ; MIPS_Processor     ;
+; Top-level entity name                                                      ; UnidadeControle    ; MIPS_Processor     ;
 ; Family name                                                                ; MAX V              ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -142,47 +141,43 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+------------------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------+---------+
-; myMux.v                          ; yes             ; User Verilog HDL File  ; /home/CIN/mlan/MIPS_Processor/myMux.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; UnidadeControle.v                ; yes             ; User Verilog HDL File  ; /home/CIN/mlan/MIPS_Processor/UnidadeControle.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Total logic elements                        ; 160       ;
-;     -- Combinational with no register       ; 160       ;
-;     -- Register only                        ; 0         ;
-;     -- Combinational with a register        ; 0         ;
-;                                             ;           ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 128       ;
-;     -- 3 input functions                    ; 32        ;
-;     -- 2 input functions                    ; 0         ;
-;     -- 1 input functions                    ; 0         ;
-;     -- 0 input functions                    ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 160       ;
-;     -- arithmetic mode                      ; 0         ;
-;     -- qfbk mode                            ; 0         ;
-;     -- register cascade mode                ; 0         ;
-;     -- synchronous clear/load mode          ; 0         ;
-;     -- asynchronous clear/load mode         ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-; I/O pins                                    ; 291       ;
-; Maximum fan-out node                        ; select[0] ;
-; Maximum fan-out                             ; 96        ;
-; Total fan-out                               ; 640       ;
-; Average fan-out                             ; 1.42      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 232   ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -190,7 +185,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |myMux                     ; 160 (160)   ; 0            ; 0          ; 291  ; 0            ; 160 (160)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |myMux              ; work         ;
+; |UnidadeControle           ; 0 (0)       ; 0            ; 0          ; 232  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |UnidadeControle    ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -210,22 +205,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |myMux|Mux31               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed May 16 12:34:33 2018
+    Info: Processing started: Wed May 16 17:00:29 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_Processor -c MIPS_Processor
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file partControl.v
@@ -263,15 +249,581 @@ Info (12021): Found 1 design units, including 1 entities, in source file myMux.v
     Info (12023): Found entity 1: myMux
 Info (12021): Found 1 design units, including 1 entities, in source file DivMult.v
     Info (12023): Found entity 1: DivMult
-Info (12127): Elaborating entity "myMux" for the top level hierarchy
-Info (21057): Implemented 451 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 259 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 160 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 699 megabytes
-    Info: Processing ended: Wed May 16 12:34:37 2018
-    Info: Elapsed time: 00:00:04
+Info (12021): Found 1 design units, including 1 entities, in source file UnidadeControle.v
+    Info (12023): Found entity 1: UnidadeControle
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.v
+    Info (12023): Found entity 1: cpu
+Info (12127): Elaborating entity "UnidadeControle" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(88): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(329): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(368): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(436): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(474): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(542): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(580): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(647): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(745): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(782): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at UnidadeControle.v(1497): truncated value with size 32 to match size of target (8)
+Warning (10270): Verilog HDL Case Statement warning at UnidadeControle.v(48): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at UnidadeControle.v(48): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "MuxPC", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "IorD", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "IRWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "PCSource", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "PCWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "PCWriteCond", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "MemRead", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "MemWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "MemAddress", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "MemToReg", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "AluSrcA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "AluSrcB", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "AluOP", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "ShiftOP", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "ShiftSourceN", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "ShiftSourceE", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "Partition", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "ByteControl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "IntCause", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "CauseWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "EPCWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "SignO", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "RegDst", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "RegWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "ReadRegister", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "WriteData", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "DivMul", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "EnableDivMul", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "state", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at UnidadeControle.v(48): inferring latch(es) for variable "timer", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "timer[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "timer[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00110000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00101000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00100000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00011000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00010000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00001000" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000111" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000110" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000101" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000100" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000011" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000010" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "state.00000001" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EnableDivMul[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "DivMul[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "WriteData[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ReadRegister[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "RegDst[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "SignO[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "EPCWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "CauseWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IntCause[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ByteControl[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "Partition[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceE[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftSourceN[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "ShiftOP[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluOP[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcB[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "AluSrcA[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemToReg[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemAddress[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MemRead[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWriteCond[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "PCSource[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IRWrite[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "IorD[7]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[0]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[1]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[2]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[3]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[4]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[5]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[6]" at UnidadeControle.v(48)
+Info (10041): Inferred latch for "MuxPC[7]" at UnidadeControle.v(48)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "MuxPC[0]" is stuck at GND
+    Warning (13410): Pin "MuxPC[1]" is stuck at GND
+    Warning (13410): Pin "MuxPC[2]" is stuck at GND
+    Warning (13410): Pin "MuxPC[3]" is stuck at GND
+    Warning (13410): Pin "MuxPC[4]" is stuck at GND
+    Warning (13410): Pin "MuxPC[5]" is stuck at GND
+    Warning (13410): Pin "MuxPC[6]" is stuck at GND
+    Warning (13410): Pin "MuxPC[7]" is stuck at GND
+    Warning (13410): Pin "IorD[0]" is stuck at GND
+    Warning (13410): Pin "IorD[1]" is stuck at GND
+    Warning (13410): Pin "IorD[2]" is stuck at GND
+    Warning (13410): Pin "IorD[3]" is stuck at GND
+    Warning (13410): Pin "IorD[4]" is stuck at GND
+    Warning (13410): Pin "IorD[5]" is stuck at GND
+    Warning (13410): Pin "IorD[6]" is stuck at GND
+    Warning (13410): Pin "IorD[7]" is stuck at GND
+    Warning (13410): Pin "IRWrite[0]" is stuck at GND
+    Warning (13410): Pin "IRWrite[1]" is stuck at GND
+    Warning (13410): Pin "IRWrite[2]" is stuck at GND
+    Warning (13410): Pin "IRWrite[3]" is stuck at GND
+    Warning (13410): Pin "IRWrite[4]" is stuck at GND
+    Warning (13410): Pin "IRWrite[5]" is stuck at GND
+    Warning (13410): Pin "IRWrite[6]" is stuck at GND
+    Warning (13410): Pin "IRWrite[7]" is stuck at GND
+    Warning (13410): Pin "PCSource[0]" is stuck at GND
+    Warning (13410): Pin "PCSource[1]" is stuck at GND
+    Warning (13410): Pin "PCSource[2]" is stuck at GND
+    Warning (13410): Pin "PCSource[3]" is stuck at GND
+    Warning (13410): Pin "PCSource[4]" is stuck at GND
+    Warning (13410): Pin "PCSource[5]" is stuck at GND
+    Warning (13410): Pin "PCSource[6]" is stuck at GND
+    Warning (13410): Pin "PCSource[7]" is stuck at GND
+    Warning (13410): Pin "PCWrite[0]" is stuck at GND
+    Warning (13410): Pin "PCWrite[1]" is stuck at GND
+    Warning (13410): Pin "PCWrite[2]" is stuck at GND
+    Warning (13410): Pin "PCWrite[3]" is stuck at GND
+    Warning (13410): Pin "PCWrite[4]" is stuck at GND
+    Warning (13410): Pin "PCWrite[5]" is stuck at GND
+    Warning (13410): Pin "PCWrite[6]" is stuck at GND
+    Warning (13410): Pin "PCWrite[7]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[0]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[1]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[2]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[3]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[4]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[5]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[6]" is stuck at GND
+    Warning (13410): Pin "PCWriteCond[7]" is stuck at GND
+    Warning (13410): Pin "MemRead[0]" is stuck at VCC
+    Warning (13410): Pin "MemRead[1]" is stuck at GND
+    Warning (13410): Pin "MemRead[2]" is stuck at GND
+    Warning (13410): Pin "MemRead[3]" is stuck at GND
+    Warning (13410): Pin "MemRead[4]" is stuck at GND
+    Warning (13410): Pin "MemRead[5]" is stuck at GND
+    Warning (13410): Pin "MemRead[6]" is stuck at GND
+    Warning (13410): Pin "MemRead[7]" is stuck at GND
+    Warning (13410): Pin "MemWrite[0]" is stuck at GND
+    Warning (13410): Pin "MemWrite[1]" is stuck at GND
+    Warning (13410): Pin "MemWrite[2]" is stuck at GND
+    Warning (13410): Pin "MemWrite[3]" is stuck at GND
+    Warning (13410): Pin "MemWrite[4]" is stuck at GND
+    Warning (13410): Pin "MemWrite[5]" is stuck at GND
+    Warning (13410): Pin "MemWrite[6]" is stuck at GND
+    Warning (13410): Pin "MemWrite[7]" is stuck at GND
+    Warning (13410): Pin "MemAddress[0]" is stuck at GND
+    Warning (13410): Pin "MemAddress[1]" is stuck at GND
+    Warning (13410): Pin "MemAddress[2]" is stuck at GND
+    Warning (13410): Pin "MemAddress[3]" is stuck at GND
+    Warning (13410): Pin "MemAddress[4]" is stuck at GND
+    Warning (13410): Pin "MemAddress[5]" is stuck at GND
+    Warning (13410): Pin "MemAddress[6]" is stuck at GND
+    Warning (13410): Pin "MemAddress[7]" is stuck at GND
+    Warning (13410): Pin "MemToReg[0]" is stuck at GND
+    Warning (13410): Pin "MemToReg[1]" is stuck at GND
+    Warning (13410): Pin "MemToReg[2]" is stuck at GND
+    Warning (13410): Pin "MemToReg[3]" is stuck at GND
+    Warning (13410): Pin "MemToReg[4]" is stuck at GND
+    Warning (13410): Pin "MemToReg[5]" is stuck at GND
+    Warning (13410): Pin "MemToReg[6]" is stuck at GND
+    Warning (13410): Pin "MemToReg[7]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[0]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[1]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[2]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[3]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[4]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[5]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[6]" is stuck at GND
+    Warning (13410): Pin "AluSrcA[7]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[0]" is stuck at VCC
+    Warning (13410): Pin "AluSrcB[1]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[2]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[3]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[4]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[5]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[6]" is stuck at GND
+    Warning (13410): Pin "AluSrcB[7]" is stuck at GND
+    Warning (13410): Pin "AluOP[0]" is stuck at VCC
+    Warning (13410): Pin "AluOP[1]" is stuck at GND
+    Warning (13410): Pin "AluOP[2]" is stuck at GND
+    Warning (13410): Pin "AluOP[3]" is stuck at GND
+    Warning (13410): Pin "AluOP[4]" is stuck at GND
+    Warning (13410): Pin "AluOP[5]" is stuck at GND
+    Warning (13410): Pin "AluOP[6]" is stuck at GND
+    Warning (13410): Pin "AluOP[7]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[0]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[1]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[2]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[3]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[4]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[5]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[6]" is stuck at GND
+    Warning (13410): Pin "ShiftOP[7]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[0]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[1]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[2]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[3]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[4]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[5]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[6]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceN[7]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[0]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[1]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[2]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[3]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[4]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[5]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[6]" is stuck at GND
+    Warning (13410): Pin "ShiftSourceE[7]" is stuck at GND
+    Warning (13410): Pin "Partition[0]" is stuck at GND
+    Warning (13410): Pin "Partition[1]" is stuck at GND
+    Warning (13410): Pin "Partition[2]" is stuck at GND
+    Warning (13410): Pin "Partition[3]" is stuck at GND
+    Warning (13410): Pin "Partition[4]" is stuck at GND
+    Warning (13410): Pin "Partition[5]" is stuck at GND
+    Warning (13410): Pin "Partition[6]" is stuck at GND
+    Warning (13410): Pin "Partition[7]" is stuck at GND
+    Warning (13410): Pin "ByteControl[0]" is stuck at GND
+    Warning (13410): Pin "ByteControl[1]" is stuck at GND
+    Warning (13410): Pin "ByteControl[2]" is stuck at GND
+    Warning (13410): Pin "ByteControl[3]" is stuck at GND
+    Warning (13410): Pin "ByteControl[4]" is stuck at GND
+    Warning (13410): Pin "ByteControl[5]" is stuck at GND
+    Warning (13410): Pin "ByteControl[6]" is stuck at GND
+    Warning (13410): Pin "ByteControl[7]" is stuck at GND
+    Warning (13410): Pin "IntCause[0]" is stuck at GND
+    Warning (13410): Pin "IntCause[1]" is stuck at GND
+    Warning (13410): Pin "IntCause[2]" is stuck at GND
+    Warning (13410): Pin "IntCause[3]" is stuck at GND
+    Warning (13410): Pin "IntCause[4]" is stuck at GND
+    Warning (13410): Pin "IntCause[5]" is stuck at GND
+    Warning (13410): Pin "IntCause[6]" is stuck at GND
+    Warning (13410): Pin "IntCause[7]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[0]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[1]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[2]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[3]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[4]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[5]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[6]" is stuck at GND
+    Warning (13410): Pin "CauseWrite[7]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[0]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[1]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[2]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[3]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[4]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[5]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[6]" is stuck at GND
+    Warning (13410): Pin "EPCWrite[7]" is stuck at GND
+    Warning (13410): Pin "SignO[0]" is stuck at GND
+    Warning (13410): Pin "SignO[1]" is stuck at GND
+    Warning (13410): Pin "SignO[2]" is stuck at GND
+    Warning (13410): Pin "SignO[3]" is stuck at GND
+    Warning (13410): Pin "SignO[4]" is stuck at GND
+    Warning (13410): Pin "SignO[5]" is stuck at GND
+    Warning (13410): Pin "SignO[6]" is stuck at GND
+    Warning (13410): Pin "SignO[7]" is stuck at GND
+    Warning (13410): Pin "RegDst[0]" is stuck at GND
+    Warning (13410): Pin "RegDst[1]" is stuck at GND
+    Warning (13410): Pin "RegDst[2]" is stuck at GND
+    Warning (13410): Pin "RegDst[3]" is stuck at GND
+    Warning (13410): Pin "RegDst[4]" is stuck at GND
+    Warning (13410): Pin "RegDst[5]" is stuck at GND
+    Warning (13410): Pin "RegDst[6]" is stuck at GND
+    Warning (13410): Pin "RegDst[7]" is stuck at GND
+    Warning (13410): Pin "RegWrite[0]" is stuck at GND
+    Warning (13410): Pin "RegWrite[1]" is stuck at GND
+    Warning (13410): Pin "RegWrite[2]" is stuck at GND
+    Warning (13410): Pin "RegWrite[3]" is stuck at GND
+    Warning (13410): Pin "RegWrite[4]" is stuck at GND
+    Warning (13410): Pin "RegWrite[5]" is stuck at GND
+    Warning (13410): Pin "RegWrite[6]" is stuck at GND
+    Warning (13410): Pin "RegWrite[7]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[0]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[1]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[2]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[3]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[4]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[5]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[6]" is stuck at GND
+    Warning (13410): Pin "ReadRegister[7]" is stuck at GND
+    Warning (13410): Pin "WriteData[0]" is stuck at GND
+    Warning (13410): Pin "WriteData[1]" is stuck at GND
+    Warning (13410): Pin "WriteData[2]" is stuck at GND
+    Warning (13410): Pin "WriteData[3]" is stuck at GND
+    Warning (13410): Pin "WriteData[4]" is stuck at GND
+    Warning (13410): Pin "WriteData[5]" is stuck at GND
+    Warning (13410): Pin "WriteData[6]" is stuck at GND
+    Warning (13410): Pin "WriteData[7]" is stuck at GND
+    Warning (13410): Pin "DivMul[0]" is stuck at GND
+    Warning (13410): Pin "DivMul[1]" is stuck at GND
+    Warning (13410): Pin "DivMul[2]" is stuck at GND
+    Warning (13410): Pin "DivMul[3]" is stuck at GND
+    Warning (13410): Pin "DivMul[4]" is stuck at GND
+    Warning (13410): Pin "DivMul[5]" is stuck at GND
+    Warning (13410): Pin "DivMul[6]" is stuck at GND
+    Warning (13410): Pin "DivMul[7]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[0]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[1]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[2]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[3]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[4]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[5]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[6]" is stuck at GND
+    Warning (13410): Pin "EnableDivMul[7]" is stuck at GND
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "clk_en"
+    Warning (15610): No output dependent on input pin "opcode"
+    Warning (15610): No output dependent on input pin "shamt"
+    Warning (15610): No output dependent on input pin "rs"
+    Warning (15610): No output dependent on input pin "rt"
+    Warning (15610): No output dependent on input pin "rd"
+    Warning (15610): No output dependent on input pin "funct"
+Info (21057): Implemented 232 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 224 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 276 warnings
+    Info: Peak virtual memory: 691 megabytes
+    Info: Processing ended: Wed May 16 17:00:32 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

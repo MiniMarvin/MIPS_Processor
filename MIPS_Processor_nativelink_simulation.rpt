@@ -5,13 +5,8 @@ Info: NativeLink has detected Verilog design -- Verilog simulation models will b
 
 Sim Mode              :  RTL
 Family                :  maxv
-<<<<<<< HEAD
 Quartus root          :  /home/CIN/mlan/altera/13.1/quartus/linux64/
 Quartus sim root      :  /home/CIN/mlan/altera/13.1/quartus/eda/sim_lib
-=======
-Quartus root          :  /home/CIN/cmg/altera/13.1/quartus/linux64/
-Quartus sim root      :  /home/CIN/cmg/altera/13.1/quartus/eda/sim_lib
->>>>>>> 7dfc689ab6e6e6372e902f83bb779a3a84302bf1
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
@@ -22,11 +17,6 @@ Sim dir               :  simulation/modelsim
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
-<<<<<<< HEAD
 Sourced NativeLink script /home/CIN/mlan/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File MIPS_Processor_run_msim_rtl_verilog.do already exists - backing up current file as MIPS_Processor_run_msim_rtl_verilog.do.bak5
-=======
-Sourced NativeLink script /home/CIN/cmg/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File MIPS_Processor_run_msim_rtl_verilog.do already exists - backing up current file as MIPS_Processor_run_msim_rtl_verilog.do.bak1
->>>>>>> 7dfc689ab6e6e6372e902f83bb779a3a84302bf1
+Warning: File MIPS_Processor_run_msim_rtl_verilog.do already exists - backing up current file as MIPS_Processor_run_msim_rtl_verilog.do.bak6
 Info: Spawning ModelSim-Altera Simulation software 

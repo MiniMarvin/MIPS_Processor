@@ -1,1 +1,2 @@
-Warning (10268): Verilog HDL information at partControl.v(10): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at UnidadeControle.v(4): object "opcode" differs only in case from object "Opcode" in the same scope
+Info (10281): Verilog HDL Declaration information at cpu.v(4): object "opcode" differs only in case from object "Opcode" in the same scope

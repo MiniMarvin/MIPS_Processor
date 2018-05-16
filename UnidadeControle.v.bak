@@ -1,0 +1,59 @@
+module UnidadeControle(
+	input clk,
+	input clk_en,
+	input opcode,
+	input shamt,
+	input Opcode,
+	input rs,
+	input rt,
+	input rd,
+	input shamt,
+	input funct,
+	output Iord,
+	output IrWrite,
+	output PcSource,
+	output PcWrite,
+	output memRead,
+	output memWrite,
+	output AluSrcA,
+	output AluSrcB,
+	output ALuOP,
+	output ShiftSourceN,
+	output SHiftSourceE,
+	output partition,
+	output ByteControl
+);
+reg state[7:0];
+initial state = 1'b0;
+
+always@ (*) begin
+	case(state)
+	1: begin
+		memRead <= 1;
+		PcSource <= 0;
+		Iord <= 0;
+		AluSrcA <= 0;
+		AluSrcB <= 1;
+		AluOP <= 1;
+	end
+	2: begin
+		IrWrite <= 1;
+		PCWrite <= 1;
+	end
+	3: begin
+		AluSrcA <= 0;
+		AluSrcB <= 3;
+		AluOP <= 1;
+		ShiftSourceN <= 3;
+		ShiftSourceU <= 2;
+	end
+	4: begin
+		if (opcode == 0) begin
+		
+		
+		end		
+	
+	end
+	endcase
+end
+endmodule
