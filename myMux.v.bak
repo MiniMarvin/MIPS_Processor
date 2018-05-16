@@ -1,0 +1,19 @@
+module myMux(
+	input select[2:0];
+	input A[31:0],
+	input B[31:0],
+	input C[31:0],
+	input D[31:0],
+	input E[31:0],
+	input F[31:0],
+	input G[31:0],
+	input H[31:0],
+);
+always@ (*) begin
+	case(select) begin
+		
+	endcase
+end
+
+
+endmodule

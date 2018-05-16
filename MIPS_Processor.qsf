@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE Auto
-set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
+set_global_assignment -name TOP_LEVEL_ENTITY myMux
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:03:39  MAY 14, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -61,3 +61,6 @@ set_global_assignment -name VHDL_FILE "Componentes do Projeto/RegDesloc.vhd"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Memoria.vhd"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Instr_Reg.vhd"
 set_global_assignment -name VHDL_FILE "Componentes do Projeto/Banco_reg.vhd"
+set_global_assignment -name VERILOG_FILE AluOut.v
+set_global_assignment -name VERILOG_FILE myMux.v
+set_global_assignment -name VERILOG_FILE DivMult.v

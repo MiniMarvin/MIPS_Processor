@@ -1,0 +1,11 @@
+module AluOut(
+	input clk,
+	input clk_en,
+	input value[31:0],
+	output reg ALUOUT[31:0]
+);
+always@ (*) begin
+		
+end
+
+endmodule
